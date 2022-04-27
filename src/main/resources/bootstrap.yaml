@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: xss-common
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.74:8848
+        file-extension: yaml
+      discovery:
+        server-addr: 192.168.1.74:8848
+
+
+
+
+
