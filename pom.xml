@@ -5,7 +5,7 @@
 
     <groupId>com.xss</groupId>
     <artifactId>xss-common</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>xss-common</name>
     <description>Demo project for Spring Boot</description>
 
@@ -26,11 +26,22 @@
     </parent>
 
     <dependencies>
-        <!--需要加入此配置，（含mvc框架才能註冊到nacos）-->
+        <!-- sftp上传-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.54</version>
         </dependency>
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <!--需要加入此配置，（含mvc框架才能註冊到nacos） 此依賴與spring-cloud-starter-gateway 互斥，導致無法註冊 -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
