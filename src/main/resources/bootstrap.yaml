@@ -1,18 +1,36 @@
-server:
-  port: 8083
-
-spring:
-  application:
-    name: xss-common
-  cloud:
-    nacos:
-      config:
-        server-addr: 192.168.1.74:8848
-        file-extension: yaml
-      discovery:
-        server-addr: 192.168.1.74:8848
-
-
-
-
-
+#server:
+#  port: 8083
+#
+#spring:
+#  application:
+#    name: xss-common
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 192.168.1.74:8848
+#        file-extension: yaml
+#      discovery:
+#        server-addr: 192.168.1.74:8848
+#
+#
+#db-Mappers:
+#  - com.gingersoft.xss.mapper
+#db-groups:
+#  - name: master
+#    list:
+#      - host: a.ricepon.com
+#        name: ricepon
+#        port: 53373
+#        user: root
+#        pass: asdftreqe
+#  - name: salve
+#    list:
+#      - host: a.ricepon.com
+#        name: ricepon
+#        port: 53373
+#        user: root
+#        pass: asdftreqe
+#
+#
+#
+#

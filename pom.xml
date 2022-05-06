@@ -55,10 +55,10 @@
             <version>3.4</version>
         </dependency>
         <!--需要加入此配置，（含mvc框架才能註冊到nacos） 此依賴與spring-cloud-starter-gateway 互斥，導致無法註冊 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-web</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
