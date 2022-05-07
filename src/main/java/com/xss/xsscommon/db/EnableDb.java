@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 /*作用類型*/
 @Target({java.lang.annotation.ElementType.TYPE})
 @Documented
-@Import(DbConfig.class)
+@Import(SessionFactoryInit.class)
 @Configuration
 public @interface EnableDb {
 
